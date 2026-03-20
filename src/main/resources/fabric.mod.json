@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "chesthighlight",
+  "version": "${version}",
+  "name": "Chest Highlight",
+  "description": "Highlights chunks containing 5 or more chests with a glowing border outline.",
+  "authors": [
+    "You"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chesthighlight/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "com.chesthighlight.ChestHighlightMod"
+    ],
+    "client": [
+      "com.chesthighlight.client.ChestHighlightClient"
+    ]
+  },
+
+  "mixins": [
+    "chesthighlight.mixins.json"
+  ],
+
+  "dependencies": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
